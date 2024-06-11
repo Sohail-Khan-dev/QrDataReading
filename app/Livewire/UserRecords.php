@@ -110,7 +110,9 @@ class UserRecords extends Component
     }
     public function render()
     {
-        $recoreds = Record::all();
-        return view('livewire.user-records',compact('recoreds'));
+        // $recoreds = Record::all();
+        return view('livewire.user-records',[
+            'recoreds' => Record::all()
+        ]);
     }
 }

@@ -1,17 +1,28 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
+    <div class="row justify-content-center align-items-center">
+            <div class="col-11">
+                <div class="text-center mb-4">
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Shield -->
+                        <path d="M50 2 L70 10 L70 40 Q50 90 30 40 L30 10 Z" fill="#2c3e50" stroke="#34495e" stroke-width="2" />
+                        <!-- Heart -->
+                        <path d="M50 30 
+                                C35 20, 20 35, 50 60
+                                C80 35, 65 20, 50 30
+                                Z" fill="#e74c3c" />
+                        <!-- Cross -->
+                        <rect x="45" y="38" width="10" height="25" fill="white" />
+                        <rect x="38" y="45" width="25" height="10" fill="white" />
+                    </svg>
                 </div>
-            </div>
+                <div class="bg-white shadow-lg p-4 rounded">
+                    <h2 class="mt-3 mb-2 text-center text-dark">CareShield Health Insurance</h2>
+                    <p class="lead mb-4 text-center">Your trusted partner in health insurance.</p>
+                    <p class="text-muted text-center mb-4">
+                        At CareShield, we prioritize your health and well-being. Our comprehensive insurance plans ensure you and your loved ones are always protected.
+                    </p>
+                    <livewire:user-records/>
+                </div>
         </div>
-    </div>
+        </div>
 </x-app-layout>

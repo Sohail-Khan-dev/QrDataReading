@@ -3,6 +3,8 @@
         .table-container {
             width: 100%;
             overflow-x: auto;
+            max-height: 600px; /* Set the desired height */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
 
         table {
@@ -15,7 +17,12 @@
             border: 1px solid #ccc;
             white-space: nowrap;
         }
-
+        .table-container thead th {
+            position: sticky;
+            top: 0;
+            background: #f8f9fa; /* Background color for the header */
+            z-index: 1; /* Ensure the header is above the table body */
+        }
         th {
             background-color: #f2f2f2;
             white-space: nowrap;
@@ -23,12 +30,21 @@
             text-overflow: ellipsis;
             word-wrap: break-word;
         }
+        .table-container th, .table-container td {
+            padding: 8px 12px;
+            text-align: left;
+            border: 1px solid #dee2e6;
+        }
+
+        .table-container tbody tr:nth-child(even) {
+            background-color: #f2f2f2; /* Zebra striping for better readability */
+        }
     </style>
 
     <div class="border p-3 bg-light rounded-lg shadow-lg">
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
             <!-- Search By ID Section -->
-            <div class="d-flex flex-column align-items-center">
+            <!-- <div class="d-flex flex-column align-items-center">
                 <label class="form-label fw-bold" for="searchById">Search By ID</label>
                 <div class="d-flex gap-3 align-items-center w-100">
                     <input wire:model.defer="searchById" class="form-control" id="searchById" type="text" placeholder="Search ID here">
@@ -38,7 +54,7 @@
                 </div>
             </div>
 
-            <!-- Search By Certificate Number Section -->
+             Search By Certificate Number Section
             <div class="d-flex flex-column align-items-center">
                 <label class="form-label fw-bold" for="searchByCertificate">Search By Certificate Number</label>
                 <div class="d-flex gap-3 align-items-center w-100">
@@ -47,7 +63,7 @@
                         Search
                     </button>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Add New Record Button -->
             <div class="mt-3">
@@ -186,7 +202,7 @@
         <table class="table table-bordered table-striped">
             <thead>
                 <tr>
-                <th> See Details </th>
+                <!-- <th> See Details </th> -->
                     <!-- <th class="px-4 py-2">الامانة</th> -->
                     <!-- <th class="px-4 py-2">البلدية</th> -->
                     <th class="px-4 py-2">الاسم</th>
@@ -211,11 +227,11 @@
             <tbody>
                 @foreach($recoreds as $record)
                 <tr>
-                <td>
+                    <!-- <td>
                         <button wire:click="showRecord({{$record->id}})" class=" m-4 btn-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                             Details <span>{{$record->id}}</span>
                         </button>
-                    </td>
+                    </td> -->
                     <!-- <td> {{$record->honesty}} </td> -->
                     <!-- <td> {{$record->municipal}} </td> -->
                     <td> {{$record->name}} </td>
