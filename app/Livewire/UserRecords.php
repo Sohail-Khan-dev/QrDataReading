@@ -86,10 +86,7 @@ class UserRecords extends Component
         Storage::disk('public')->put($fileName, base64_decode($qrCode));
         $this->qrPath = Storage::url($fileName);
     }
-//   public function mount(){
-//     $this->recordId = 1;
-//     $this->generateQrCode();
-//   }
+
     public function showRecord($id){
         $record = Record::FindOrFail($id);
         if($record)
@@ -109,6 +106,7 @@ class UserRecords extends Component
         else{
             $record = Record::where('health_certificate_number',$this->searchByCertificate)->first();
         }
+        return $record;
     }
     public function render()
     {
