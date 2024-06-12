@@ -13,6 +13,7 @@
         .navbar-custom .navbar-nav .nav-link {
             color: white; /* Set the text color */
             font-weight: 700;
+            font-size: larger;
         }
         .navbar-custom .navbar-nav .nav-link:hover {
             color: #CCCCCC; /* Set the text hover color */
@@ -85,22 +86,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item">
+                <li class="ml-4 nav-item">
                     <a class="nav-link" href="#">عن بلدي</a>
                 </li>
-                <li class="nav-item">
+                <li class="ml-4 nav-item">
                     <a class="nav-link" href="#">مركز المعرفة</a>
                 </li>
-                <li class="nav-item">
+                <li class="ml-4 nav-item">
                     <a class="nav-link" href="#">الخدمات</a>
                 </li>
-                <li class="nav-item">
+                <li class="ml-4 nav-item">
                     <a class="nav-link" href="#">الاستعلامات</a>
                 </li>
-                <li class="nav-item">
+                <li class="ml-4 nav-item">
                     <a class="nav-link" href="#">المنصات</a>
                 </li>
-                <li class="nav-item">
+                <li class="ml-4 nav-item">
                     <a class="nav-link" href="#">تواصل معنا</a>
                 </li>
             </ul>
