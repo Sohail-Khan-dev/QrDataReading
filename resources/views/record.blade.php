@@ -28,17 +28,18 @@
         }
 
         .text-field label {
-            bottom: -0.666rem;
-            right: 8px;
+            bottom: -0.766rem;
+            right: 6px;
             padding: 0px 3px;
             line-height: 1.25;
             z-index: 5;
+            font-size: larger;
         }
 
     .text-field label:before {
         content: '';
         background: white;
-        height: 14px;
+        height: 16px;
         width: auto;
         display: block;
         left: 0;
