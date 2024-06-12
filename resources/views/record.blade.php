@@ -23,10 +23,34 @@
         .form-control{
             background-color: #F3F6F7;
         }
-    </style>
+        .text-field.text-right {
+            position: relative;
+        }
+
+        .text-field label {
+            bottom: -0.666rem;
+            right: 8px;
+            padding: 0px 3px;
+            line-height: 1.25;
+            z-index: 5;
+        }
+
+    .text-field label:before {
+        content: '';
+        background: white;
+        height: 14px;
+        width: auto;
+        display: block;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    }
+        </style>
 </head>
 <body dir="rtl" class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <a class="navbar-brand" href="#">
         <svg width="95" height="40" viewBox="0 0 95 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_228_2239)">
@@ -84,83 +108,82 @@
 <div class="container py-5">
     <section class="bg-white shadow rounded p-5">
         <div class="text-center mb-5">
-            <h2 class="text-primary font-weight-bold">شهادة صحية سنوية</h2>
+            <h2 class="font-weight-bold">شهادة صحية سنوية</h2>
         </div>
         <div class="text-center mb-4">
             @if ($record->image_path)
-                <img src="{{ asset('storage/' . $record->image_path) }}" alt="Image" class="img-fluid rounded shadow" width="150">
+                <img src="{{ asset('storage/' . $record->image_path) }}" alt="Image" class="img-fluid rounded shadow" width="200">
             @else
                 <p>No image</p>
             @endif
         </div>
         <div class="row" dir="rtl">
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify">الامانة</label>
-                <input type="text" class="form-control" value="{{$record->honesty}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify">الامانة</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->honesty}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">البلدية</label>
-                <input type="text" class="form-control" value="{{$record->municipal}}" readonly>
+            <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">البلدية</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->municipal}}" readonly>
+            </div>            <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">الاسم</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->name}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">الاسم</label>
-                <input type="text" class="form-control" value="{{$record->name}}" readonly>
+            <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم الهوية</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->id_number}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">رقم الهوية</label>
-                <input type="text" class="form-control" value="{{$record->id_number}}" readonly>
+            <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">الجنس</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->sex}}" readonly>
+            </div>           
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">الجنسية</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->nationality}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">الجنس</label>
-                <input type="text" class="form-control" value="{{$record->sex}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم الشهادة الصحية</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->health_certificate_number}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">الجنسية</label>
-                <input type="text" class="form-control" value="{{$record->nationality}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">المهنة</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->occupation}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">رقم الشهادة الصحية</label>
-                <input type="text" class="form-control" value="{{$record->health_certificate_number}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ إصدار الشهادة الصحية هجري</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->issue_date_hc_H}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">المهنة</label>
-                <input type="text" class="form-control" value="{{$record->occupation}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ إصدار الشهادة الصحية ميلادي</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->issue_date_hc_AD}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">تاريخ إصدار الشهادة الصحية هجري</label>
-                <input type="text" class="form-control" value="{{$record->issue_date_hc_H}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ نهاية الشهادة الصحية هجري</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_hc_H}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">تاريخ إصدار الشهادة الصحية ميلادي</label>
-                <input type="text" class="form-control" value="{{$record->issue_date_hc_AD}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ نهاية الشهادة الصحية ميلادي</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_hc_AD}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">تاريخ نهاية الشهادة الصحية هجري</label>
-                <input type="text" class="form-control" value="{{$record->end_date_hc_H}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">نوع البرنامج التثقيفى</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->type_of_edu}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">تاريخ نهاية الشهادة الصحية ميلادي</label>
-                <input type="text" class="form-control" value="{{$record->end_date_hc_AD}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ انتهاء البرنامج التثقيفى</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_edu}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">نوع البرنامج التثقيفى</label>
-                <input type="text" class="form-control" value="{{$record->type_of_edu}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم الرخصة</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->licence_number}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">تاريخ انتهاء البرنامج التثقيفى</label>
-                <input type="text" class="form-control" value="{{$record->end_date_edu}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">اسم المنشآة</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->facility_name}}" readonly>
             </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">رقم الرخصة</label>
-                <input type="text" class="form-control" value="{{$record->licence_number}}" readonly>
-            </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">اسم المنشآة</label>
-                <input type="text" class="form-control" value="{{$record->facility_name}}" readonly>
-            </div>
-            <div class="col-md-6 mb-0">
-                <p class="font-bold text-justify ">رقم المنشأة</label>
-                <input type="text" class="form-control" value="{{$record->facility_no}}" readonly>
+             <div class="text-field text-right col-md-6">
+                <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم المنشأة</label>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->facility_no}}" readonly>
             </div>
         </div>
     </section>

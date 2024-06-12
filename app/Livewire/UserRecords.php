@@ -81,7 +81,7 @@ class UserRecords extends Component
     public function generateQrCode()
     {
         $url = route('record.show', $this->recordId);
-        $qrCode = (new DNS2D)->getBarcodePNG($url, 'QRCODE');
+        $qrCode = (new DNS2D)->getBarcodePNG($url, 'QRCODE');  //DATAMATRIX
         $fileName = 'qrcodes/' . $this->recordId . '.png';
         Storage::disk('public')->put($fileName, base64_decode($qrCode));
         $this->qrPath = Storage::url($fileName);
