@@ -35,7 +35,7 @@
             padding: 0px 3px;
             line-height: 1.25;
             z-index: 5;
-            font-size: larger;
+            font-size: large;
         }
 
     .text-field label:before {
