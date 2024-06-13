@@ -24,6 +24,9 @@
         .form-control{
             background-color: #f3f6f7;
         }
+        .form-control:disabled{
+             background-color: #f3f6f7;
+        }
         .text-field.text-right {
             position: relative;
             margin-bottom: -8px;
