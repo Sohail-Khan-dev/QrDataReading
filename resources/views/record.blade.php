@@ -8,7 +8,7 @@
     <style>
         .navbar-custom {
             background-color: #196C64; /* Set the background color */
-            height: 96px;
+            height: 75px;
         }
         .navbar-custom .navbar-nav .nav-link {
             color: white; /* Set the text color */
