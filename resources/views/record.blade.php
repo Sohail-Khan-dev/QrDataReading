@@ -22,7 +22,7 @@
             font-weight: 500;
         }
         .form-control{
-            background-color: #F3F6F7;
+            background-color: #f3f6f7;
         }
         .text-field.text-right {
             position: relative;
