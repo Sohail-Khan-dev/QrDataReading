@@ -80,7 +80,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">شهادة صحية سنوية</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" wire:click="closeModal">
+                <button type="button" class="close px-2" data-dismiss="modal" aria-label="Close" wire:click="closeModal">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -186,7 +186,7 @@
 
                     <div class="d-flex justify-content-between">
                         <button type="submit" class="btn btn-primary" wire:click="save">Save</button>
-                        <button type="button" class="btn btn-secondary">Cancel</button>
+                        <button type="button" wire:click="closeModal" class="btn btn-secondary">Cancel</button>
                     </div>
             </form>
             </div>
