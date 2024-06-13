@@ -26,6 +26,7 @@
         }
         .text-field.text-right {
             position: relative;
+            margin-bottom: -8px;
         }
 
         .text-field label {
