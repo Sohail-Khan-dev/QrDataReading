@@ -21,9 +21,9 @@
         p{
             font-weight: 500;
         }
-        .form-control{
+/*         .form-control{
             background-color: #f3f6f7;
-        }
+        } */
         .form-control:disabled{
              background-color: #f3f6f7;
         }
@@ -126,70 +126,70 @@
         <div class="row" dir="rtl">
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify">الامانة</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->honesty}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->honesty}}" disabled>
             </div>
             <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">البلدية</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->municipal}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->municipal}}" disabled>
             </div>            <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">الاسم</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->name}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->name}}" disabled>
             </div>
             <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم الهوية</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->id_number}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->id_number}}" disabled>
             </div>
             <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">الجنس</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->sex}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->sex}}" disabled>
             </div>           
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">الجنسية</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->nationality}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->nationality}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم الشهادة الصحية</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->health_certificate_number}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->health_certificate_number}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">المهنة</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->occupation}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->occupation}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ إصدار الشهادة الصحية هجري</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->issue_date_hc_H}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->issue_date_hc_H}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ إصدار الشهادة الصحية ميلادي</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->issue_date_hc_AD}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->issue_date_hc_AD}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ نهاية الشهادة الصحية هجري</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_hc_H}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_hc_H}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ نهاية الشهادة الصحية ميلادي</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_hc_AD}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_hc_AD}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">نوع البرنامج التثقيفى</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->type_of_edu}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->type_of_edu}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ انتهاء البرنامج التثقيفى</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_edu}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_edu}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم الرخصة</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->licence_number}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->licence_number}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">اسم المنشآة</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->facility_name}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->facility_name}}" disabled>
             </div>
              <div class="text-field text-right col-md-6">
                 <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم المنشأة</label>
-                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->facility_no}}" readonly>
+                <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->facility_no}}" disabled>
             </div>
         </div>
     </section>
