@@ -27,11 +27,28 @@
         .form-control:disabled{
              background-color: #f3f6f7;
         }
+        @media (max-width: 576px) {
+            .text-field {
+                margin-bottom: 0.5rem;
+            }
+            .text-field label {
+                font-size: 0.8rem;
+            }
+            .text-field input {
+                font-size: 0.8rem;
+                padding: 0.2rem 0.4rem;
+            }
+            .img-fluid {
+                width: 150px;
+            }
+        }
         .text-field.text-right {
             position: relative;
             margin-bottom: -8px;
         }
-
+        .form-control-lg{
+            font-size: 1rem;
+        }
         .text-field label {
             bottom: -0.766rem;
             right: 6px;
