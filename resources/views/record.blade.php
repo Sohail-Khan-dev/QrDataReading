@@ -32,7 +32,7 @@
                 margin-bottom: 0.5rem;
             }
             .text-field label {
-                font-size: 0.8rem;
+                font-size: 0.9rem !important;
             }
             .text-field input {
                 font-size: 0.8rem;
@@ -40,6 +40,9 @@
             }
             .img-fluid {
                 width: 150px;
+            }
+            h2{
+                font-size: 1.52rem !important;
             }
         }
         .text-field.text-right {
