@@ -32,7 +32,7 @@
                 margin-bottom: 0.5rem;
             }
             .text-field label {
-                font-size: 0.8rem;
+                font-size: 0.9rem !important;
             }
             .text-field input {
                 font-size: 0.8rem;
@@ -41,13 +41,13 @@
             .img-fluid {
                 width: 150px;
             }
+            h2{
+                font-size: 1.52rem !important;
+            }
         }
         .text-field.text-right {
             position: relative;
             margin-bottom: -8px;
-        }
-        .form-control-lg{
-            font-size: 1rem;
         }
         .text-field label {
             bottom: -0.766rem;
@@ -58,18 +58,18 @@
             font-size: large;
         }
 
-    .text-field label:before {
-        content: '';
-        background: white;
-        height: 16px;
-        width: auto;
-        display: block;
-        left: 0;
-        right: 0;
-        position: absolute;
-        top: 0;
-        z-index: -1;
-    }
+        .text-field label:before {
+            content: '';
+            background: white;
+            height: 16px;
+            width: auto;
+            display: block;
+            left: 0;
+            right: 0;
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
         </style>
 </head>
 <body dir="rtl" class="bg-light">
@@ -215,6 +215,18 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<script>
+ let input = $('.form-control-lg');
+    function updateInputClass(){
+        if(window.innerWidth <=750){
+            console.log('you are using mobile',input);
+            input.removeClass('form-control-lg')
+        }else{
+            input.addClass('form-control-lg')
+        }
+    }
+    updateInputClass();
+    window.addEventListener('resize', updateInputClass);
+</script>
 </body>
 </html>
