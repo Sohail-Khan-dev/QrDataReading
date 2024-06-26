@@ -80,7 +80,7 @@ class UserRecords extends Component
     }
     public function generateQrCode()
     {
-        $url = route('record.show', $this->recordId);
+        $url = route('record.show', $this->recordId." Hello this is the test text to test the Qr weather it is working or not. If Not then we have to do some thing ");
         $qrCode = (new DNS2D)->getBarcodePNG($url, 'QRCODE');  //DATAMATRIX
         $fileName = 'qrcodes/' . $this->recordId . '.png';
         Storage::disk('public')->put($fileName, base64_decode($qrCode));
