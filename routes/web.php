@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 }); // ->middleware((['auth','verified']));
 
-Route::get('/show/{id}',[RecordController::class,'show'])->name('record.show');
+Route::get('/Eservices/Health/issue/PrintedLicences//{id}',[RecordController::class,'show'])->name('record.show');
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
