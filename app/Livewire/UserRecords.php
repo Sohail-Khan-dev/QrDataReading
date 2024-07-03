@@ -7,6 +7,7 @@ use Livewire\Component;
 use Illuminate\Support\Facades\Storage;
 use Livewire\WithFileUploads;
 use Milon\Barcode\DNS2D;
+use Illuminate\Support\Str;
 class UserRecords extends Component
 {
     use WithFileUploads;
@@ -80,7 +81,8 @@ class UserRecords extends Component
     }
     public function generateQrCode()
     {
-        $url = route('record.show', $this->recordId." Gora Cha somra Zor hm Okary kana developer na charta na shy Takhday.. :D");
+        $uuid = Str::uuid()->toString();
+        $url = route('record.show', $this->recordId.'uuid'.$uuid);
         $qrCode = (new DNS2D)->getBarcodePNG($url, 'QRCODE');  //DATAMATRIX
         $fileName = 'qrcodes/' . $this->recordId . '.png';
         Storage::disk('public')->put($fileName, base64_decode($qrCode));

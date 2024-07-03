@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\File;
 class RecordController extends Controller
 {
     public function show($id){
+        
        $record =  Record::Find($id);
        return view('record', compact('record'));
     }
