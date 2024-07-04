@@ -9,7 +9,10 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+        <!-- // New font for arabic  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
 
     </head>
     <body class="antialiased">
@@ -17,18 +20,19 @@
         <div class="row justify-content-center align-items-center">
             <div class="col-11">
                 <div class="text-center mb-4">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> -->
                         <!-- Shield -->
-                        <path d="M50 2 L70 10 L70 40 Q50 90 30 40 L30 10 Z" fill="#2c3e50" stroke="#34495e" stroke-width="2" />
+                        <!-- <path d="M50 2 L70 10 L70 40 Q50 90 30 40 L30 10 Z" fill="#2c3e50" stroke="#34495e" stroke-width="2" /> -->
                         <!-- Heart -->
-                        <path d="M50 30 
+                        <!-- <path d="M50 30 
                                 C35 20, 20 35, 50 60
                                 C80 35, 65 20, 50 30
-                                Z" fill="#e74c3c" />
+                                Z" fill="#e74c3c" /> -->
                         <!-- Cross -->
-                        <rect x="45" y="38" width="10" height="25" fill="white" />
+                        <!-- <rect x="45" y="38" width="10" height="25" fill="white" />
                         <rect x="38" y="45" width="25" height="10" fill="white" />
-                    </svg>
+                    </svg> -->
+                    <img src="/images/icon.jpg" alt="balady" height="100">
                 </div>
                 <div class="bg-white shadow-lg p-4 rounded">
                     <h2 class="mt-3 mb-2 text-center text-dark">CareShield Health Insurance</h2>
