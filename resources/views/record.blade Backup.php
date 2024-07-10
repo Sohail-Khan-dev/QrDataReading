@@ -1,26 +1,15 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
 <html lang="ar">
 
 <head>
-<meta name="robots" content="noindex">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>إصدار  شهادة صحية</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="content">
-    <meta name="author" content="content">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/fav.png">
-    <link rel="icon" type="image/x-icon" href="fav.ico">
-    <!-- Page Title -->
-    <title>بوابة بلـــدي</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شهادة صحية سنوية</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="/css/app.min.css" rel="stylesheet" type="text/css">
     <style>
-        /* body{
+        body{
             background-color: #ECEFF3 !important;
-        } */
+        }
         .navbar-custom {
             background-color: #196C64;
             /* Set the background color */
@@ -39,14 +28,14 @@
             /* Set the text hover color */
         }
 
-        /* p a {
-            /* font-weight: 500; 
+        p a {
+            /* font-weight: 500; */
             font-size: small;
-        } */
+        }
 
-        /* .form-control:disabled {
+        .form-control:disabled {
             background-color: #f3f6f7;
-        } */
+        }
 
         footer {
             background-color: #f1f1f1;
@@ -85,19 +74,19 @@
             margin: 0;
             margin-right: 10px;
         }
-        @media(max-width : 750px){
-            .footer-content {
-                display: block;
-            }
-            .footer-info {
-                display: block;
-            }
+@media(max-width : 750px){
+    .footer-content {
+        display: block;
+    }
+    .footer-info {
+        display: block;
+    }
 
-        }
+}
         @media (max-width: 576px) {
-            /* .text-field {
+            .text-field {
                 margin-bottom: 0.5rem;
-            } */
+            }
             .footer-content {
                 flex-direction: column;
                 text-align: center;
@@ -108,14 +97,14 @@
                 align-items: center;
                 justify-content: center;
             }
-            /* .text-field label {
+            .text-field label {
                 font-size: 0.9rem !important;
-            } */
+            }
 
-            /* .text-field input {
+            .text-field input {
                 font-size: 0.8rem;
                 padding: 0.2rem 0.4rem;
-            } */
+            }
 
             .img-fluid {
                 width: 150px;
@@ -126,21 +115,21 @@
             }
         }
 
-        /* .text-field.text-right {
+        .text-field.text-right {
             position: relative;
             margin-bottom: -8px;
-        } */
+        }
 
-        /* .text-field label {
+        .text-field label {
             bottom: -0.766rem;
             right: 6px;
             padding: 0px 3px;
             line-height: 1.25;
             z-index: 5;
             font-size: large;
-        } */
+        }
 
-        /* .text-field label:before {
+        .text-field label:before {
             content: '';
             background: white;
             height: 16px;
@@ -151,7 +140,7 @@
             position: absolute;
             top: 0;
             z-index: -1;
-        } */
+        }
     </style>
 </head>
 
@@ -211,162 +200,86 @@
             </ul>
         </div>
     </nav>
-    <div class="bg-grey">
-        <section class="page-container">
-            <div class="section pt-0 mt-1 mt-md-4">
-                <div class="container p-0">
-                    <div class="card p-lg-4">
-                        <div class="card-body">
-
-                            <div class="row">
-                                <div class="col-md-12 center">
-                                    <div class="sub-heading">
-                                        <h2 style="text-align:center">شهادة صحية سنوية</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-12" style="text-align: center;">
-                                @if ($record->image_path)
-                                    <img width="150" height="200" class="m-3" style="margin:20px" src="{{ asset('storage/' . $record->image_path) }}" alt="">
-                                    @else
-                                    <p>No image</p>
-                                    @endif
-                                </div>
-                            </div>
-
-                            <div class="row">
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->honesty}}" readonly="">
-                                        <span> الامانة </span>
-                                    </label>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->municipal}}"  readonly="">
-                                        <span>  البلدية</span>
-                                    </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->name}}" readonly="">
-                                        <span> الاسم</span>
-                                    </label>
-                                </div>
-                                 
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label mb-4">
-                                        <input class="form-control" type="text" placeholder="" value="{{$record->id_number}}" readonly="">
-                                        <span>  رقم الهوية </span>
-                                    </label>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->sex}}" readonly="">
-                                        <span>الجنس</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->nationality}}" readonly="">
-                                        <span> الجنسية   </span>
-                                    </label>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->health_certificate_number}}" readonly="">
-                                        <span> رقم الشهادة الصحية    </span>
-                                    </label>
-                                </div>
-
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->occupation}}" readonly="">
-                                        <span> المهنة  </span>
-                                    </label>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->issue_date_hc_H}}" readonly="">
-                                        <span> تاريخ إصدار الشهادة الصحية هجري</span>
-                                    </label>
-                                </div>
-                                
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->issue_date_hc_AD}}" readonly="">
-                                        <span> تاريخ إصدار الشهادة الصحية ميلادي</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->end_date_hc_H}}" readonly="">
-                                        <span> تاريخ نهاية الشهادة الصحية هجري</span>
-                                    </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->end_date_hc_AD}}" readonly="">
-                                        <span> تاريخ نهاية الشهادة الصحية ميلادي</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->type_of_edu}}" readonly="">
-                                        <span>  نوع البرنامج التثقيفى</span>
-                                    </label>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->end_date_edu}}" readonly="">
-                                        <span> تاريخ انتهاء البرنامج التثقيفى</span>
-                                    </label>
-                                </div>
-
-
-
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                                <input class="form-control" type="text" value="{{$record->licence_number}}" readonly="">
-
-                                        <span> رقم الرخصة</span>
-                                    </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->facility_name}}" readonly="">
-                                        <span> اسم المنشآة  </span>
-                                    </label>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->facility_no}}" readonly="">
-                                        <span>  رقم المنشأة</span>
-                                    </label>
-                                </div>
-                                <div class="col-md-6">
-
-                                </div>
-
-                                <div class="col-md-12 mt-4">
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
+    <div class="container py-5">
+        <section class="bg-white shadow rounded p-5">
+            <div class="text-center mb-5">
+                <h2 class="font-weight-bold">شهادة صحية سنوية</h2>
+            </div>
+            <div class="text-center mb-4">
+                @if ($record->image_path)
+                <img src="{{ asset('storage/' . $record->image_path) }}" alt="Image" class="img-fluid rounded shadow" width="200">
+                @else
+                <p>No image</p>
+                @endif
+            </div>
+            <div class="row" dir="rtl">
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify">الامانة</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->honesty}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">البلدية</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->municipal}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">الاسم</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->name}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم الهوية</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->id_number}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">الجنس</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->sex}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">الجنسية</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->nationality}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم الشهادة الصحية</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->health_certificate_number}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">المهنة</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->occupation}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ إصدار الشهادة الصحية هجري</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->issue_date_hc_H}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ إصدار الشهادة الصحية ميلادي</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->issue_date_hc_AD}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ نهاية الشهادة الصحية هجري</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_hc_H}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ نهاية الشهادة الصحية ميلادي</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_hc_AD}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">نوع البرنامج التثقيفى</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->type_of_edu}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">تاريخ انتهاء البرنامج التثقيفى</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->end_date_edu}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم الرخصة</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->licence_number}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">اسم المنشآة</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->facility_name}}" disabled>
+                </div>
+                <div class="text-field text-right col-md-6">
+                    <label class="font-weight-bolder mb-0 position-relative text-justify ">رقم المنشأة</label>
+                    <input type="text" class="font-weight-light form-control form-control-lg" value="{{$record->facility_no}}" disabled>
                 </div>
             </div>
         </section>

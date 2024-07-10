@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+    <title>إصدار  شهادة صحية</title>
 
-        <title> إصدار شهادة صحية</title>
+    
+    <meta name="robots" content="noindex">
+    
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+    
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="content">
+    <meta name="author" content="content">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav.png">
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+
+        <title>بوابة بلـــدي</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -13,25 +23,21 @@
         <!-- // New font for arabic  -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap" rel="stylesheet">
-
+        <!-- New Added Css and Js  -->
+        <link href="css/all.css" rel="stylesheet" type="text/css">
+        <link href="css/select2.min.css" rel="stylesheet">
+        <!-- Custom CSS-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/app.min.css" rel="stylesheet" type="text/css">
+        <link href="css/Validation.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/jquery.calendars.picker.css" rel="stylesheet">
     </head>
     <body class="antialiased">
     <!-- <div class="container py-5"> -->
         <div class="row justify-content-center align-items-center">
             <div class="col-11">
                 <div class="text-center mb-4">
-                    <!-- <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"> -->
-                        <!-- Shield -->
-                        <!-- <path d="M50 2 L70 10 L70 40 Q50 90 30 40 L30 10 Z" fill="#2c3e50" stroke="#34495e" stroke-width="2" /> -->
-                        <!-- Heart -->
-                        <!-- <path d="M50 30 
-                                C35 20, 20 35, 50 60
-                                C80 35, 65 20, 50 30
-                                Z" fill="#e74c3c" /> -->
-                        <!-- Cross -->
-                        <!-- <rect x="45" y="38" width="10" height="25" fill="white" />
-                        <rect x="38" y="45" width="25" height="10" fill="white" />
-                    </svg> -->
                     <img src="/images/icon.jpg" alt="balady" height="100">
                 </div>
                 <div class="bg-white shadow-lg p-4 rounded">

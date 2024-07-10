@@ -23,7 +23,7 @@ Route::get('/Eservices/Health/issue/PrintedLicences/{id}',[RecordController::cla
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
-Route::view('test','test');
+Route::view('test','index');
 Route::get('test/qr',[RecordController::class,'generateQrCode']);
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
