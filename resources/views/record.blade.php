@@ -188,7 +188,7 @@
                 </svg>
             </span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse w-100" style="background: #1e6c64; margin:-16px !important;" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="ml-4 nav-item">
                     <a class="nav-link" href="#">عن بلدي</a>
@@ -214,7 +214,7 @@
     <div class="bg-grey">
         <section class="page-container">
             <div class="section pt-0 mt-1 mt-md-4">
-                <div class="container p-0">
+                <div class="p-0">
                     <div class="card p-lg-4">
                         <div class="card-body">
 
