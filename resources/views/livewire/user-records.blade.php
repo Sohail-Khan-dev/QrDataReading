@@ -6,6 +6,10 @@
             max-height: 600px; /* Set the desired height */
             overflow-y: auto; /* Enable vertical scrolling */
         }
+        .modal-body {
+            max-height: 80vh; /* Adjust this value as needed */
+            overflow-y: auto;
+        }
 
         table {
             width: auto;
