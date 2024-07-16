@@ -85,12 +85,23 @@
             margin: 0;
             margin-right: 10px;
         }
+        .dropdown-menu{
+            display:none;
+        }
         @media(max-width : 750px){
             .footer-content {
                 display: block;
             }
             .footer-info {
                 display: block;
+                font-size:10px;
+            }
+            .footer-info p {
+            margin: 10px;
+            /* margin-right: 10px; */
+            }
+            footer-links a{
+                font-size:10px;
             }
 
         }
@@ -192,9 +203,131 @@
             <ul class="navbar-nav">
                 <li class="ml-4 nav-item">
                     <a class="nav-link" href="#">عن بلدي</a>
+                    <!-- new code will be here .. -->
+                    <div class="dropdown-menu">
+                        <ul class="menu">
+                          <li class="menu-item menu-item--expanded  menu-level-1 menu-count-1">
+                                <span>من نحن</span>
+                                    <ul class="menu">
+                                        <li class="menu-item menu-level-2 menu-count-1">
+                                            <a href="https://balady.gov.sa/ar/about-balady" data-drupal-link-system-path="node/10671">من نحن</a>
+                                        </li>
+                                        <li class="menu-item menu-level-2 menu-count-2">
+                                            <a href="https://balady.gov.sa/ar/node/11036" data-drupal-link-system-path="node/11036">الهيكل التنظيمي</a>
+                                        </li>
+                                        <li class="menu-item menu-level-2 menu-count-3">
+                                            <a href="https://balady.gov.sa/ar/node/11038" data-drupal-link-system-path="node/11038">الهيكل الإستراتيجي للوزارة </a>
+                                        </li>
+                                        <li class="menu-item menu-level-2 menu-count-4">
+                                            <a href="https://balady.gov.sa/ar/node/11014" data-drupal-link-system-path="node/11014">السياسات والاستراتيجيات</a>
+                                        </li>
+                                        <li class="menu-item menu-level-2 menu-count-5">
+                                            <a href="https://balady.gov.sa/ar/node/11004" data-drupal-link-system-path="node/11004">أهداف التنمية المستدامة</a>
+                                        </li>
+                                        <li class="menu-item menu-level-2 menu-count-6">
+                                            <a href="https://balady.gov.sa/ar/partners" data-drupal-link-system-path="node/10903">الشركاء</a>
+                                        </li>
+                                        <li class="menu-item menu-level-2 menu-count-7">
+                                            <a href="https://balady.gov.sa/ar/node/10982" data-drupal-link-system-path="node/10982">الوظائف</a>
+                                        </li>
+                                        <li class="menu-item menu-level-2 menu-count-8">
+                                            <a href="https://balady.gov.sa/ar/node/11217" data-drupal-link-system-path="node/11217">تواصل معنا</a>
+                                        </li>
+                                    </ul>
+                        
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-2">
+                                <a href="https://balady.gov.sa/ar/e_participation" data-drupal-link-system-path="node/11024">المشاركة الإلكترونية</a>
+                                <ul class="menu">
+                                    <li class="menu-item menu-level-2 menu-count-1">
+                                        <a href="https://balady.gov.sa/ar/e_participation/11215" data-drupal-link-system-path="node/11215">الاستشارات</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2">
+                                        <a href="https://balady.gov.sa/ar/e_participation/11190" data-drupal-link-system-path="node/11190">البيانات المفتوحة</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3">
+                                        <a href="https://balady.gov.sa/ar/e_participation/feedback" data-drupal-link-system-path="node/11205">التغذية الراجعة</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-4">
+                                        <a href="https://balady.gov.sa/ar/e_participation/development-and-ideas" data-drupal-link-system-path="node/11281">التطوير المشترك والأفكار</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-5">
+                                        <a href="https://balady.gov.sa/ar/e_participation/11022" data-drupal-link-system-path="node/11022">وسائل التواصل الاجتماعي</a>
+                                    </li>
+                                </ul>
+                        
+                             </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-3">
+                                <span>الأخبار والفعاليات</span>
+                                    <ul class="menu">
+                                        <li class="menu-item menu-level-2 menu-count-1">
+                                        <a href="https://balady.gov.sa/ar/news" data-drupal-link-system-path="node/11152">الأخبار</a>
+                                        </li>
+                                        <li class="menu-item menu-level-2 menu-count-2">
+                                            <a href="https://balady.gov.sa/ar/events-list" data-drupal-link-system-path="events-list">الفعاليات</a>
+                                        </li>
+                                        <li class="menu-item menu-level-2 menu-count-3">
+                                            <a href="https://balady.gov.sa/ar/events-list/old" data-drupal-link-system-path="events-list/old">الفعاليات</a>
+                                        </li>
+                                    </ul>
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-4">
+                                <span>المنافسات والميزانية</span>
+                                <ul class="menu">
+                                    <li class="menu-item menu-level-2 menu-count-1">
+                                        <a href="https://balady.gov.sa/ar/node/10981" data-drupal-link-system-path="node/10981">المنافسات والمشتريات</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2">
+                                        <a href="https://balady.gov.sa/ar/node/11050" data-drupal-link-system-path="node/11050">الميزانية والإنفاق</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                    </div>
                 </li>
                 <li class="ml-4 nav-item">
                     <a class="nav-link" href="#">مركز المعرفة</a>
+                    <div class="dropdown-menu">
+                        <ul class="menu">
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-1">
+                                <span>مبادرات وشراكات</span>
+                                <ul class="menu">
+                                <li class="menu-item menu-level-2 menu-count-1">
+                                    <a href="https://balady.gov.sa/ar/initiatives" data-drupal-link-system-path="node/10897">المبادرات</a>
+                                </li>
+                                <li class="menu-item menu-level-2 menu-count-2">
+                                    <a href="https://balady.gov.sa/ar/partners" data-drupal-link-system-path="node/10903">الشراكات</a>
+                                </li>
+                                <li class="menu-item menu-level-2 menu-count-3">
+                                    <a href="https://istitlaa.ncc.gov.sa/ar/Municipality/momra/Pages/default.aspx">منصة استطلاع</a>
+                                </li>
+                                <li class="menu-item menu-level-2 menu-count-4">
+                                    <a href="https://eparticipation.my.gov.sa/e-consultations/consultations/?title=&amp;status=&amp;type=&amp;beneficiary=&amp;sector=">منصة تفاعل</a>
+                                </li>
+                                </ul>
+                            </li>   
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-2">
+                                <span>بيانات وإحصائيات</span>
+                                <ul class="menu">
+                                    <li class="menu-item menu-level-2 menu-count-1">
+                                        <a href="https://balady.gov.sa/ar/e_participation/11190" data-drupal-link-system-path="node/11190">البيانات المفتوحة</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2">
+                                        <a href="https://balady.gov.sa/ar/e_participation/feedback/11180" data-drupal-link-system-path="node/11180">إحصائيات ومؤشرات المنصة</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-3">
+                                <span>الاستبيانات</span>
+                                <ul class="menu">
+                                    <li class="menu-item menu-level-2 menu-count-1">
+                                        <a href="https://raqmi.dga.gov.sa/DXSurvey/survey/p/steps/1/90e37d66-bfc6-4dab-2abb-08dc36cb7be5/register">قيم تجربتك الرقمية</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="ml-4 nav-item">
                     <a class="nav-link" href="#">الخدمات</a>
@@ -529,6 +662,20 @@
             </div>
         </div>
     </footer>
+    <script>
+         $(document).ready(function() {
+            console.log("console is working");
+        $(document).on('click','.nav-link',function(e) {
+            console.log("clicked");
+            e.preventDefault(); // Prevent the default action of the link
+            $(".dropdown-menu").not($(this).siblings('.dropdown-menu')).hide();
+            $(this).siblings('.dropdown-menu').toggle(); // Toggle the dropdown menu
+        });
+    });
+    function hideAllDropDown(){
+        $(".dropdown-menu").hide();
+    }
+    </script>
 </body>
 
 </html>
