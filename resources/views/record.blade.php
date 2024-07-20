@@ -1,10 +1,11 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <html lang="ar">
 
 <head>
-<meta name="robots" content="noindex">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>إصدار  شهادة صحية</title>
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إصدار شهادة صحية</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -85,27 +86,34 @@
             margin: 0;
             margin-right: 10px;
         }
-        .dropdown-menu{
-            display:none;
+
+        .dropdown-menu {
+            display: none;
         }
-        @media(max-width : 750px){
+
+        @media(max-width : 750px) {
             .footer-content {
                 display: block;
             }
+
             .footer-info {
                 display: block;
-                font-size:10px;
+                font-size: 10px;
             }
+
             .footer-info p {
-            margin: 10px;
-            /* margin-right: 10px; */
+                margin: 10px;
+                /* margin-right: 10px; */
             }
-            footer-links a{
-                font-size:10px;
+
+            footer-links a {
+                font-size: 10px;
             }
 
         }
+
         @media (max-width: 576px) {
+
             /* .text-field {
                 margin-bottom: 0.5rem;
             } */
@@ -114,11 +122,13 @@
                 text-align: center;
             }
 
-            .footer-links, .footer-info {
+            .footer-links,
+            .footer-info {
                 /* display: flex; */
                 align-items: center;
                 justify-content: center;
             }
+
             /* .text-field label {
                 font-size: 0.9rem !important;
             } */
@@ -204,117 +214,117 @@
                 <li class="ml-4 nav-item">
                     <a class="dropdown-toggle nav-link" href="#">عن بلدي</a>
                     <!-- new code will be here .. -->
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu w-100">
                         <ul class="menu">
-                          <li class="menu-item menu-item--expanded  menu-level-1 menu-count-1">
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-1">
                                 <span>من نحن</span>
-                                    <ul class="menu">
-                                        <li class="menu-item menu-level-2 menu-count-1">
-                                            <a href="https://balady.gov.sa/ar/about-balady" data-drupal-link-system-path="node/10671">من نحن</a>
-                                        </li>
-                                        <li class="menu-item menu-level-2 menu-count-2">
-                                            <a href="https://balady.gov.sa/ar/node/11036" data-drupal-link-system-path="node/11036">الهيكل التنظيمي</a>
-                                        </li>
-                                        <li class="menu-item menu-level-2 menu-count-3">
-                                            <a href="https://balady.gov.sa/ar/node/11038" data-drupal-link-system-path="node/11038">الهيكل الإستراتيجي للوزارة </a>
-                                        </li>
-                                        <li class="menu-item menu-level-2 menu-count-4">
-                                            <a href="https://balady.gov.sa/ar/node/11014" data-drupal-link-system-path="node/11014">السياسات والاستراتيجيات</a>
-                                        </li>
-                                        <li class="menu-item menu-level-2 menu-count-5">
-                                            <a href="https://balady.gov.sa/ar/node/11004" data-drupal-link-system-path="node/11004">أهداف التنمية المستدامة</a>
-                                        </li>
-                                        <li class="menu-item menu-level-2 menu-count-6">
-                                            <a href="https://balady.gov.sa/ar/partners" data-drupal-link-system-path="node/10903">الشركاء</a>
-                                        </li>
-                                        <li class="menu-item menu-level-2 menu-count-7">
-                                            <a href="https://balady.gov.sa/ar/node/10982" data-drupal-link-system-path="node/10982">الوظائف</a>
-                                        </li>
-                                        <li class="menu-item menu-level-2 menu-count-8">
-                                            <a href="https://balady.gov.sa/ar/node/11217" data-drupal-link-system-path="node/11217">تواصل معنا</a>
-                                        </li>
-                                    </ul>
-                        
-                            </li>
-                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-2">
-                                <a href="https://balady.gov.sa/ar/e_participation" data-drupal-link-system-path="node/11024">المشاركة الإلكترونية</a>
                                 <ul class="menu">
                                     <li class="menu-item menu-level-2 menu-count-1">
-                                        <a href="https://balady.gov.sa/ar/e_participation/11215" data-drupal-link-system-path="node/11215">الاستشارات</a>
+                                        <a href="#" data-drupal-link-system-path="node/10671">من نحن</a>
                                     </li>
                                     <li class="menu-item menu-level-2 menu-count-2">
-                                        <a href="https://balady.gov.sa/ar/e_participation/11190" data-drupal-link-system-path="node/11190">البيانات المفتوحة</a>
+                                        <a href="#" data-drupal-link-system-path="node/11036">الهيكل التنظيمي</a>
                                     </li>
                                     <li class="menu-item menu-level-2 menu-count-3">
-                                        <a href="https://balady.gov.sa/ar/e_participation/feedback" data-drupal-link-system-path="node/11205">التغذية الراجعة</a>
+                                        <a href="#" data-drupal-link-system-path="node/11038">الهيكل الإستراتيجي للوزارة </a>
                                     </li>
                                     <li class="menu-item menu-level-2 menu-count-4">
-                                        <a href="https://balady.gov.sa/ar/e_participation/development-and-ideas" data-drupal-link-system-path="node/11281">التطوير المشترك والأفكار</a>
+                                        <a href="#" data-drupal-link-system-path="node/11014">السياسات والاستراتيجيات</a>
                                     </li>
                                     <li class="menu-item menu-level-2 menu-count-5">
-                                        <a href="https://balady.gov.sa/ar/e_participation/11022" data-drupal-link-system-path="node/11022">وسائل التواصل الاجتماعي</a>
+                                        <a href="#" data-drupal-link-system-path="node/11004">أهداف التنمية المستدامة</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-6">
+                                        <a href="#ners" data-drupal-link-system-path="node/10903">الشركاء</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-7">
+                                        <a href="#" data-drupal-link-system-path="node/10982">الوظائف</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-8">
+                                        <a href="#" data-drupal-link-system-path="node/11217">تواصل معنا</a>
                                     </li>
                                 </ul>
-                        
-                             </li>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-2">
+                                <a href="#" data-drupal-link-system-path="node/11024">المشاركة الإلكترونية</a>
+                                <ul class="menu">
+                                    <li class="menu-item menu-level-2 menu-count-1">
+                                        <a href="#" data-drupal-link-system-path="node/11215">الاستشارات</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2">
+                                        <a href="#" data-drupal-link-system-path="node/11190">البيانات المفتوحة</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3">
+                                        <a href="#" data-drupal-link-system-path="node/11205">التغذية الراجعة</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-4">
+                                        <a href="#" data-drupal-link-system-path="node/11281">التطوير المشترك والأفكار</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-5">
+                                        <a href="#" data-drupal-link-system-path="node/11022">وسائل التواصل الاجتماعي</a>
+                                    </li>
+                                </ul>
+
+                            </li>
                             <li class="menu-item menu-item--expanded  menu-level-1 menu-count-3">
                                 <span>الأخبار والفعاليات</span>
-                                    <ul class="menu">
-                                        <li class="menu-item menu-level-2 menu-count-1">
-                                        <a href="https://balady.gov.sa/ar/news" data-drupal-link-system-path="node/11152">الأخبار</a>
-                                        </li>
-                                        <li class="menu-item menu-level-2 menu-count-2">
-                                            <a href="https://balady.gov.sa/ar/events-list" data-drupal-link-system-path="events-list">الفعاليات</a>
-                                        </li>
-                                        <li class="menu-item menu-level-2 menu-count-3">
-                                            <a href="https://balady.gov.sa/ar/events-list/old" data-drupal-link-system-path="events-list/old">الفعاليات</a>
-                                        </li>
-                                    </ul>
+                                <ul class="menu">
+                                    <li class="menu-item menu-level-2 menu-count-1">
+                                        <a href="#" data-drupal-link-system-path="node/11152">الأخبار</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2">
+                                        <a href="#" data-drupal-link-system-path="events-list">الفعاليات</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3">
+                                        <a href="#" data-drupal-link-system-path="events-list/old">الفعاليات</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="menu-item menu-item--expanded  menu-level-1 menu-count-4">
                                 <span>المنافسات والميزانية</span>
                                 <ul class="menu">
                                     <li class="menu-item menu-level-2 menu-count-1">
-                                        <a href="https://balady.gov.sa/ar/node/10981" data-drupal-link-system-path="node/10981">المنافسات والمشتريات</a>
+                                        <a href="#" data-drupal-link-system-path="node/10981">المنافسات والمشتريات</a>
                                     </li>
                                     <li class="menu-item menu-level-2 menu-count-2">
-                                        <a href="https://balady.gov.sa/ar/node/11050" data-drupal-link-system-path="node/11050">الميزانية والإنفاق</a>
+                                        <a href="#" data-drupal-link-system-path="node/11050">الميزانية والإنفاق</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
-                        
+
                     </div>
                 </li>
                 <li class="ml-4 nav-item">
                     <a class="dropdown-toggle nav-link" href="#">مركز المعرفة</a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu w-100">
                         <ul class="menu">
                             <li class="menu-item menu-item--expanded  menu-level-1 menu-count-1">
                                 <span>مبادرات وشراكات</span>
                                 <ul class="menu">
-                                <li class="menu-item menu-level-2 menu-count-1">
-                                    <a href="https://balady.gov.sa/ar/initiatives" data-drupal-link-system-path="node/10897">المبادرات</a>
-                                </li>
-                                <li class="menu-item menu-level-2 menu-count-2">
-                                    <a href="https://balady.gov.sa/ar/partners" data-drupal-link-system-path="node/10903">الشراكات</a>
-                                </li>
-                                <li class="menu-item menu-level-2 menu-count-3">
-                                    <a href="https://istitlaa.ncc.gov.sa/ar/Municipality/momra/Pages/default.aspx">منصة استطلاع</a>
-                                </li>
-                                <li class="menu-item menu-level-2 menu-count-4">
-                                    <a href="https://eparticipation.my.gov.sa/e-consultations/consultations/?title=&amp;status=&amp;type=&amp;beneficiary=&amp;sector=">منصة تفاعل</a>
-                                </li>
+                                    <li class="menu-item menu-level-2 menu-count-1">
+                                        <a href="#" data-drupal-link-system-path="node/10897">المبادرات</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2">
+                                        <a href="#" data-drupal-link-system-path="node/10903">الشراكات</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3">
+                                        <a href="#">منصة استطلاع</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-4">
+                                        <a href="#">منصة تفاعل</a>
+                                    </li>
                                 </ul>
-                            </li>   
+                            </li>
                             <li class="menu-item menu-item--expanded  menu-level-1 menu-count-2">
                                 <span>بيانات وإحصائيات</span>
                                 <ul class="menu">
                                     <li class="menu-item menu-level-2 menu-count-1">
-                                        <a href="https://balady.gov.sa/ar/e_participation/11190" data-drupal-link-system-path="node/11190">البيانات المفتوحة</a>
+                                        <a href="#" data-drupal-link-system-path="node/11190">البيانات المفتوحة</a>
                                     </li>
                                     <li class="menu-item menu-level-2 menu-count-2">
-                                        <a href="https://balady.gov.sa/ar/e_participation/feedback/11180" data-drupal-link-system-path="node/11180">إحصائيات ومؤشرات المنصة</a>
+                                        <a href="#" data-drupal-link-system-path="node/11180">إحصائيات ومؤشرات المنصة</a>
                                     </li>
                                 </ul>
                             </li>
@@ -322,7 +332,7 @@
                                 <span>الاستبيانات</span>
                                 <ul class="menu">
                                     <li class="menu-item menu-level-2 menu-count-1">
-                                        <a href="https://raqmi.dga.gov.sa/DXSurvey/survey/p/steps/1/90e37d66-bfc6-4dab-2abb-08dc36cb7be5/register">قيم تجربتك الرقمية</a>
+                                        <a href="">قيم تجربتك الرقمية</a>
                                     </li>
                                 </ul>
                             </li>
@@ -331,15 +341,253 @@
                 </li>
                 <li class="ml-4 nav-item">
                     <a class="dropdown-toggle nav-link" href="#">الخدمات</a>
+                    <div class="dropdown-menu w-100">
+                        <ul class="menu" role="link" aria-hidden="false">
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-1" role="link" aria-hidden="false">
+                                <span>الصفحات الشخصية</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">إدارة الطلبات</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#">إدارة الرخص</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3" role="link" aria-hidden="false">
+                                        <a href="#">لوحة التحكم</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-2" role="link" aria-hidden="false">
+                                <span>المنظمات والأنظمة</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">منصة رسم إشغال مرافق الإيواء</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#">منصة رسم تقديم منتجات التبغ</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3" role="link" aria-hidden="false">
+                                        <a href="#" data-drupal-link-system-path="products/10721">بلدي أعمال</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-4" role="link" aria-hidden="false">
+                                        <a href="#" data-drupal-link-system-path="products/10635">تصنيف مقدمي خدمات المدن</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-3" role="link" aria-hidden="false">
+                                <span>التفويض البلدي الإلكتروني</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">إضافة منشأة إلى مدير حساب</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن طلبات منشأة</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن مفوضي منشأة</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-4" role="link" aria-hidden="false">
+                                <span>الرخص التجارية</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">إصدار رخصة تجارية</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#">تجديد رخصة نشاط تجاري</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3" role="link" aria-hidden="false">
+                                        <a href="#">إلغاء رخصة نشاط تجاري</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-5" role="link" aria-hidden="false">
+                                <span>الرخص الإنشائية</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">إصدار رخصة بناء</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#">خدمة إصدار رخصة تسوير أراضي فضاء</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-6" role="link" aria-hidden="false">
+                                <span>الشهادات الصحية</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">إصدار شهادة صحية</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#">تجديد شهادة صحية</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-7" role="link" aria-hidden="false">
+                                <span>خدمات تنسيق المشروعات</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#" data-drupal-link-system-path="products/10497">خدمات تنسيق أعمال البنية التحتية</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#" data-drupal-link-system-path="products/11535">خدمات تنسيق المشروعات الكبرى</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-8" role="link" aria-hidden="false">
+                                <span>خدمات التقارير المساحية</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">إصدار تقرير مساحي</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-level-1 menu-count-9" role="link" aria-hidden="false">
+                                <a href="#" data-drupal-link-system-path="node/10895">قائمة الخدمات</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="ml-4 nav-item">
                     <a class="dropdown-toggle nav-link" href="#">الاستعلامات</a>
+                    <div class="dropdown-menu w-100">
+                        <ul class="menu" role="link" aria-hidden="false">
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-1" role="link" aria-hidden="false">
+                                <span>الاستعلامات العامة</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن المخالفة للإجراءات الاحترازية</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#">حاسبة الرسوم المعلوماتية</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن المكاتب الهندسية</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-4" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن عقود النظافة</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-5" role="link" aria-hidden="false">
+                                        <a href="#">أسواق المتاجر المتنقلة</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-6" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن الإيقافات</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-7" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن المخالفات</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-2" role="link" aria-hidden="false">
+                                <span>الأراضي والبناء</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">استعلام عن رخصة بناء</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#">اشتراطات إيصال الخدمات الكهربائية</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3" role="link" aria-hidden="false">
+                                        <a href="#">المستكشف الجغرافي</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-4" role="link" aria-hidden="false">
+                                        <a href="#">مستكشف التغطية لخدمات البنية التحتية</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-5" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن تقرير مساحي</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-3" role="link" aria-hidden="false">
+                                <span>الاستعلامات التجارية</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">استعلام عن رخصة نشاط تجاري</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#">الأنشطة التجارية والاشتراطات البلدية</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن مسارات العربات المتجولة</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-item--expanded  menu-level-1 menu-count-4" role="link" aria-hidden="false">
+                                <span>خدمات إكرام الموتى</span>
+                                <ul class="menu" role="link" aria-hidden="false">
+                                    <li class="menu-item menu-level-2 menu-count-1" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن مقدمي خدمات نقل وتجهيز الموتى (الجهات الخيرية)</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-2" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن قبر متوفي</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-3" role="link" aria-hidden="false">
+                                        <a href="#">طباعة شهادة دفن</a>
+                                    </li>
+                                    <li class="menu-item menu-level-2 menu-count-4" role="link" aria-hidden="false">
+                                        <a href="#">الاستعلام عن المقابر</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="menu-item menu-level-1 menu-count-5" role="link" aria-hidden="false">
+                                <a href="" data-drupal-link-system-path="products/11704">الدليل التنظيمي للوحات التجارية</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="ml-4 nav-item">
                     <a class="dropdown-toggle nav-link" href="#">المنصات</a>
+                    <div class="dropdown-menu w-100">
+                        <ul class="menu" role="link" aria-hidden="false">
+                            <li class="menu-item menu-level-1 menu-count-1" role="link" aria-hidden="false">
+                                <a href="#">بوابة الفرص الاستثمارية</a>
+                            </li>
+                            <li class="menu-item menu-level-1 menu-count-2" role="link" aria-hidden="false">
+                                <a href="#"> المنصات التفاعلية</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="ml-4 nav-item">
                     <a class="dropdown-toggle nav-link" href="#">تواصل معنا</a>
+                    <div class="dropdown-menu w-100">
+                        <ul class="menu" role="link" aria-hidden="false">
+                            <li class="menu-item menu-level-1 menu-count-1" role="link" aria-hidden="false">
+                                <a href="#" data-drupal-link-system-path="node/11316">اتصل بنا</a>
+                            </li>
+                            <li class="menu-item menu-level-1 menu-count-2" role="link" aria-hidden="false">
+                                <a href="#" data-drupal-link-system-path="node/11211">بلاغ عن فساد</a>
+                            </li>
+                            <li class="menu-item menu-level-1 menu-count-3" role="link" aria-hidden="false">
+                                <a href="#" data-drupal-link-system-path="node/10902">الأسئلة الشائعة</a>
+                            </li>
+                            <li class="menu-item menu-level-1 menu-count-4" role="link" aria-hidden="false">
+                                <a href="#">الدعم الفني بلغة الإشارة</a>
+                            </li>
+                            <li class="menu-item menu-level-1 menu-count-5" role="link" aria-hidden="false">
+                                <a href="#" data-drupal-link-system-path="branches">دليل الأمانات</a>
+                            </li>
+                            <li class="menu-item menu-level-1 menu-count-6" role="link" aria-hidden="false">
+                                <a href="#" data-drupal-link-system-path="node/11022">وسائل التواصل الإجتماعي</a>
+                            </li>
+                            <li class="menu-item menu-level-1 menu-count-7" role="link" aria-hidden="false">
+                                <a href="#">حجز موعد إلكتروني</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -362,7 +610,7 @@
 
                             <div class="row">
                                 <div class="col-md-12" style="text-align: center;">
-                                @if ($record->image_path)
+                                    @if ($record->image_path)
                                     <img width="150" height="200" class="m-3" style="margin:20px" src="{{ asset('storage/' . $record->image_path) }}" alt="">
                                     @else
                                     <p>No image</p>
@@ -381,8 +629,8 @@
 
                                 <div class="col-md-6">
                                     <label class="form-group has-float-label ">
-                                        <input class="form-control" type="text" value="{{$record->municipal}}"  readonly="">
-                                        <span>  البلدية</span>
+                                        <input class="form-control" type="text" value="{{$record->municipal}}" readonly="">
+                                        <span> البلدية</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6">
@@ -391,11 +639,11 @@
                                         <span> الاسم</span>
                                     </label>
                                 </div>
-                                 
+
                                 <div class="col-md-6">
                                     <label class="form-group has-float-label mb-4">
                                         <input class="form-control" type="text" placeholder="" value="{{$record->id_number}}" readonly="">
-                                        <span>  رقم الهوية </span>
+                                        <span> رقم الهوية </span>
                                     </label>
                                 </div>
 
@@ -409,14 +657,14 @@
                                 <div class="col-md-6">
                                     <label class="form-group has-float-label ">
                                         <input class="form-control" type="text" value="{{$record->nationality}}" readonly="">
-                                        <span> الجنسية   </span>
+                                        <span> الجنسية </span>
                                     </label>
                                 </div>
 
                                 <div class="col-md-6">
                                     <label class="form-group has-float-label ">
                                         <input class="form-control" type="text" value="{{$record->health_certificate_number}}" readonly="">
-                                        <span> رقم الشهادة الصحية    </span>
+                                        <span> رقم الشهادة الصحية </span>
                                     </label>
                                 </div>
 
@@ -424,7 +672,7 @@
                                 <div class="col-md-6">
                                     <label class="form-group has-float-label ">
                                         <input class="form-control" type="text" value="{{$record->occupation}}" readonly="">
-                                        <span> المهنة  </span>
+                                        <span> المهنة </span>
                                     </label>
                                 </div>
 
@@ -434,7 +682,7 @@
                                         <span> تاريخ إصدار الشهادة الصحية هجري</span>
                                     </label>
                                 </div>
-                                
+
                                 <div class="col-md-6">
                                     <label class="form-group has-float-label ">
                                         <input class="form-control" type="text" value="{{$record->issue_date_hc_AD}}" readonly="">
@@ -458,7 +706,7 @@
                                 <div class="col-md-6">
                                     <label class="form-group has-float-label ">
                                         <input class="form-control" type="text" value="{{$record->type_of_edu}}" readonly="">
-                                        <span>  نوع البرنامج التثقيفى</span>
+                                        <span> نوع البرنامج التثقيفى</span>
                                     </label>
                                 </div>
 
@@ -473,7 +721,7 @@
 
                                 <div class="col-md-6">
                                     <label class="form-group has-float-label ">
-                                                <input class="form-control" type="text" value="{{$record->licence_number}}" readonly="">
+                                        <input class="form-control" type="text" value="{{$record->licence_number}}" readonly="">
 
                                         <span> رقم الرخصة</span>
                                     </label>
@@ -481,13 +729,13 @@
                                 <div class="col-md-6">
                                     <label class="form-group has-float-label ">
                                         <input class="form-control" type="text" value="{{$record->facility_name}}" readonly="">
-                                        <span> اسم المنشآة  </span>
+                                        <span> اسم المنشآة </span>
                                     </label>
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-group has-float-label ">
                                         <input class="form-control" type="text" value="{{$record->facility_no}}" readonly="">
-                                        <span>  رقم المنشأة</span>
+                                        <span> رقم المنشأة</span>
                                     </label>
                                 </div>
                                 <div class="col-md-6">
@@ -512,6 +760,7 @@
     <script>
         let input = $('.form-control-lg');
         let footerContent = $('.footer-content');
+
         function updateInputClass() {
             if (window.innerWidth <= 750) {
                 // console.log('you are using mobile', input);
@@ -664,18 +913,19 @@
         </div>
     </footer>
     <script>
-         $(document).ready(function() {
+        $(document).ready(function() {
             console.log("console is working");
-        $(document).on('click','.nav-link',function(e) {
-            console.log("clicked");
-            e.preventDefault(); // Prevent the default action of the link
-            $(".dropdown-menu").not($(this).siblings('.dropdown-menu')).hide();
-            $(this).siblings('.dropdown-menu').toggle(); // Toggle the dropdown menu
+            $(document).on('click', '.nav-link', function(e) {
+                console.log("clicked");
+                e.preventDefault(); // Prevent the default action of the link
+                $(".dropdown-menu").not($(this).siblings('.dropdown-menu')).hide();
+                $(this).siblings('.dropdown-menu').toggle(); // Toggle the dropdown menu
+            });
         });
-    });
-    function hideAllDropDown(){
-        $(".dropdown-menu").hide();
-    }
+
+        function hideAllDropDown() {
+            $(".dropdown-menu").hide();
+        }
     </script>
 </body>
 
