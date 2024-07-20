@@ -4,7 +4,8 @@
 <head>
 <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>إصدار  شهادة صحية</title>
+    <title>الشهادة الصحية الموحدة
+    </title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -354,7 +355,8 @@
                             <div class="row">
                                 <div class="col-md-12 center">
                                     <div class="sub-heading">
-                                        <h2 style="text-align:center">شهادة صحية سنوية</h2>
+                                        <h2 style="text-align:center">الشهادة الصحية الموحدة
+                                        </h2>
                                     </div>
                                 </div>
                             </div>
