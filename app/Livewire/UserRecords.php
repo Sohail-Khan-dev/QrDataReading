@@ -59,7 +59,6 @@ class UserRecords extends Component
         //     return;
         // }
         // dump('save is called'. $this->honesty, $this->name);
-        // $this->generateQrCode();
         $validateData = $this->validate();
         
         try{
@@ -83,10 +82,9 @@ class UserRecords extends Component
     public function generateQrCode()
     {
         $uuid = Str::uuid()->toString();
-        $uuid = substr($uuid,10,16);
-        // dd($uuid);
+        $uuid = substr($uuid,0,12);
         $url = route('record.show', $this->recordId.'?uuid');
-        $qrCode = (new DNS2D)->getBarcodePNG($url, 'QRCODE');  //DATAMATRIX
+        $qrCode = (new DNS2D)->getBarcodePNG($url, 'QRCODE',8,8);  //DATAMATRIX
         $fileName = 'qrcodes/' . $this->recordId . '.png';
         Storage::disk('public')->put($fileName, base64_decode($qrCode));
         $this->qrPath = Storage::url($fileName);
