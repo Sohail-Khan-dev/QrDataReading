@@ -4,8 +4,7 @@
 <head>
 <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>الشهادة الصحية الموحدة
-    </title>
+    <title>إصدار  شهادة صحية</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -203,7 +202,7 @@
         <div class="collapse navbar-collapse w-100" style="background: #1e6c64; margin:-16px !important;" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="ml-4 nav-item">
-                    <a class="nav-link" href="#">عن بلدي</a>
+                    <a class="dropdown-toggle nav-link" href="#">عن بلدي</a>
                     <!-- new code will be here .. -->
                     <div class="dropdown-menu">
                         <ul class="menu">
@@ -288,7 +287,7 @@
                     </div>
                 </li>
                 <li class="ml-4 nav-item">
-                    <a class="nav-link" href="#">مركز المعرفة</a>
+                    <a class="dropdown-toggle nav-link" href="#">مركز المعرفة</a>
                     <div class="dropdown-menu">
                         <ul class="menu">
                             <li class="menu-item menu-item--expanded  menu-level-1 menu-count-1">
@@ -331,16 +330,16 @@
                     </div>
                 </li>
                 <li class="ml-4 nav-item">
-                    <a class="nav-link" href="#">الخدمات</a>
+                    <a class="dropdown-toggle nav-link" href="#">الخدمات</a>
                 </li>
                 <li class="ml-4 nav-item">
-                    <a class="nav-link" href="#">الاستعلامات</a>
+                    <a class="dropdown-toggle nav-link" href="#">الاستعلامات</a>
                 </li>
                 <li class="ml-4 nav-item">
-                    <a class="nav-link" href="#">المنصات</a>
+                    <a class="dropdown-toggle nav-link" href="#">المنصات</a>
                 </li>
                 <li class="ml-4 nav-item">
-                    <a class="nav-link" href="#">تواصل معنا</a>
+                    <a class="dropdown-toggle nav-link" href="#">تواصل معنا</a>
                 </li>
             </ul>
         </div>
