@@ -13,6 +13,7 @@
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.5",
         "milon/barcode": "^11.0",
+        "simplesoftwareio/simple-qrcode": "^4.2",
         "twbs/bootstrap": "5.0.2"
     },
     "require-dev": {

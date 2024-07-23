@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Storage;
 use Livewire\WithFileUploads;
 use Milon\Barcode\DNS2D;
 use Illuminate\Support\Str;
+
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 class UserRecords extends Component
 {
     use WithFileUploads;
@@ -81,10 +83,24 @@ class UserRecords extends Component
     }
     public function generateQrCode()
     {
+        $this->testGeneration();
+        return;
         $uuid = Str::uuid()->toString();
         $uuid = substr($uuid,0,12);
+        $url = route('record.show', $this->recordId.'?uuid'.$uuid);
+        $qrCode = (new DNS2D)->getBarcodePNG($url, 'QRCODE',10,10);  //DATAMATRIX
+        $fileName = 'qrcodes/' . $this->recordId . '.png';
+        Storage::disk('public')->put($fileName, base64_decode($qrCode));
+        $this->qrPath = Storage::url($fileName);
+    }
+    public function testGeneration(){
         $url = route('record.show', $this->recordId.'?uuid');
-        $qrCode = (new DNS2D)->getBarcodePNG($url, 'QRCODE',8,8);  //DATAMATRIX
+        $logoPath = public_path('qr/qr.png');
+        $qrCode = QrCode::format('png')
+        ->size(200) // Adjust size
+        // ->merge($logoPath, 0.3, true) // Adjust the size and position of the embedded content
+        ->errorCorrection('H') // High error correction to ensure the embedded content is readable
+        ->generate($url);
         $fileName = 'qrcodes/' . $this->recordId . '.png';
         Storage::disk('public')->put($fileName, base64_decode($qrCode));
         $this->qrPath = Storage::url($fileName);

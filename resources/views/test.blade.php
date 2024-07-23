@@ -16,9 +16,12 @@
         .navbar-custom .navbar-nav .nav-link:hover {
             color: #CCCCCC; /* Set the text hover color */
         }
+        p{
+            min-width: 120px;
+        }
     </style>
 </head>
-<body dir="rtl">
+<body dir="">
     <nav class="navbar navbar-expand-lg navbar-custom">
         <a class="navbar-brand" href="#">
         <svg width="95" height="40" viewBox="0 0 95 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +73,50 @@
             </ul>
         </div>
     </nav>
-    {{ $qrImage }}
+    <p> Select one of them </p>
+    <div class="d-flex"> <strong>Character Encoder : </strong>
+          <p>  ISO-8859-1 </p>
+          <p>  ISO-8859-2 </p>
+          <p>  ISO-8859-3 </p>
+          <p>  ISO-8859-4 </p>
+          <p>  ISO-8859-5 </p>
+          <p>  ISO-8859-6 </p>
+          <p>  ISO-8859-7 </p>
+          <p>  ISO-8859-8 </p>
+          <p>  ISO-8859-9 </p>
+          <p>  ISO-8859-10 </p>
+          <p>  ISO-8859-11 </p>
+          <p>  ISO-8859-12 </p>
+          <p>  ISO-8859-13 </p>
+          <p>  ISO-8859-14 </p>
+          <p>  ISO-8859-15 </p>
+          <p>  ISO-8859-16 </p>
+          <p> SHIFT-JIS</p>
+          <p>WINDOWS-1250</p>
+          <p>WINDOWS-1251</p>
+          <p> WINDOWS-1252</p>
+          <p> WINDOWS-1256</p>
+          <p> UTF-16BE</p>
+          <p> UTF-8</p>
+          <p> ASCII</p>
+          <p> GBK</p>
+          <p> EUC-KR</p>
+    </div>
+        <div class="">
+            <p> <strong> Error Correctoin </strong> </p>
+            <P> L   M   Q   H   </P>
+        </div>
+    {{ 
+        QrCode::size(200)->style('square')->margin(2)->backgroundcolor(255, 254, 255)->color(0,0,0)
+        ->encoding('ISO-8859-3')->errorCorrection('M')
+         ->generate("testing that it mpt is working") 
+    }}
+    {{  
+        $encoding
+    }}
+    {{
+        $correction
+    }}
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
