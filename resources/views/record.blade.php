@@ -177,6 +177,13 @@
 </head>
 
 <body dir="rtl">
+    <div class="preloader" id="preloader-logo" style="display:block ;">
+        <div class="loader">
+            <div class="loader-logo"> <img src="{{ asset('images/logo.svg') }}" alt="logo"></div>
+            <div class="loader-figure"> </div>
+        </div>
+    </div>
+   
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
         <a class="navbar-brand" href="#">
             <svg width="95" height="40" viewBox="0 0 95 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -754,7 +761,7 @@
         </section>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
@@ -912,9 +919,16 @@
             </div>
         </div>
     </footer>
+
     <script>
         $(document).ready(function() {
-            console.log("console is working");
+            console.log('here in the asman');
+            $("#preloader-logo").fadeOut(4000,'swing',function(){
+               console.log('this is fadeout ');
+            });
+            setTimeout(function() {
+                $("#preloader-logo").css('display', 'none');
+            }, 1600);
             $(document).on('click', '.nav-link', function(e) {
                 console.log("clicked");
                 e.preventDefault(); // Prevent the default action of the link
