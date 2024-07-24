@@ -4,7 +4,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RecordController;
 use Illuminate\Support\Facades\Route;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
-
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,8 +25,9 @@ Route::get('/Eservices/Health/issue/PrintedLicences/{id}',[RecordController::cla
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
-// Route::view('test','index');
-// Route::get('test',[RecordController::class,'generateQrCode']);
+Route::get("qr/{id}",function($id){
+    return redirect()->route('record.show', ['id' => $id]);
+})->name('qr.store');
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
@@ -43,6 +45,17 @@ Route::get('/qrtest',function(){
     return $qr_code;
 });
 Route::get("/test/{correction?}/{encoding?}", function($correction="ISO-8859-1",$encoding="L"){
-    return view('test', compact('correction', 'encoding'));
+    $uuid = Str::uuid()->toString();
+        $url = route('record.show','1'.'?uuid'.$uuid);
+        // $qrCode = (new DNS2D)->getBarcodePNG($url, 'QRCODE',10,10);  //DATAMATRIX
+        $qrCode = QrCode::size(200)->style('square')->margin(2)->backgroundcolor(255, 254, 255)->color(0,0,0)
+        ->encoding('ISO-8859-1')->errorCorrection('M')
+        ->format('svg')
+        ->generate($url);
+    
+        $path = 'qrcodes/' . '1' . '.svg';
+        Storage::disk('public')->put($path, $qrCode);
+        $imgurl = $this->qrPath = Storage::url($path);
+        return  $imgurl;
 });
 require __DIR__.'/auth.php';

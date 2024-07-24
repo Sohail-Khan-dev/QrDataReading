@@ -261,7 +261,7 @@
                         @endif
                     </td>
                     <td class="py-2 px-4 border-b border-gray-200">
-                        <img src="{{ asset('storage/qrcodes/' . $record->id . '.png') }}" alt="Image" width="100">
+                        <img src="{{ asset('storage/qrcodes/' . $record->id . '.svg') }}" alt="Image" width="100">
                     </td>
                 </tr>
                 @endforeach

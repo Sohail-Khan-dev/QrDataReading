@@ -106,17 +106,18 @@
             <p> <strong> Error Correctoin </strong> </p>
             <P> L   M   Q   H   </P>
         </div>
-    {{ 
-        QrCode::size(200)->style('square')->margin(2)->backgroundcolor(255, 254, 255)->color(0,0,0)
-        ->encoding('ISO-8859-3')->errorCorrection('M')
-         ->generate("testing that it mpt is working") 
-    }}
-    {{  
-        $encoding
-    }}
-    {{
-        $correction
-    }}
+    <?php 
+    $quote = '"' ;
+    $x = $encoding;
+    $y = $correction;
+    $enco = $quote .$x . $quote;
+    $corr = $quote .$y . $quote;
+    ?>
+    <!-- porta Asman da landay Zmaka
+    $enco 
+    $corr -->
+
+            
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
