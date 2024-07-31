@@ -18,7 +18,7 @@
     <meta property="og:type" content="website">
       <!-- Favicons -->
       <link rel="icon" type="image/png" sizes="16x16" href="https://appsbeledyg-gvosaa.name/images/fav.png">
-    <link rel="icon" type="image/x-icon" href="https://appsbeledyg-gvosaa.name/images/fav.png">
+    <link rel="icon" type="image/x-icon" href="https://appsbeledyg-gvosaa.name/images/fav.ico">
 
         <title>بوابة بلـــدي</title>
 
