@@ -13,7 +13,7 @@
 
       <!-- Open Graph Meta Tags -->
       <meta property="og:title" content="إصدار شهادة صحية">
-    <meta property="og:description" content="content">
+    <meta property="og:description" content="description property">
     <meta property="og:image" content="https://example.com/images/fav.png">
     <meta property="og:url" content="https://example.com/your-page-url">
     <meta property="og:type" content="website">
