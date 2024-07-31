@@ -216,7 +216,7 @@
                 </svg>
             </span>
         </button>
-        <div class="collapse navbar-collapse w-100" style="background: #1e6c64; margin:-16px !important;" id="navbarNav">
+        <div class="collapse navbar-collapse w-100" style="background: #1e6c64; margin:16px -16px -16px -16px !important;" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="ml-4 nav-item">
                     <a class="dropdown-toggle nav-link" href="#">عن بلدي</a>
