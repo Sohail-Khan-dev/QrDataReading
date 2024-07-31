@@ -3,19 +3,28 @@
 <html lang="ar">
 
 <head>
+<meta charset="UTF-8">
     <meta name="robots" content="noindex">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إصدار شهادة صحية</title>
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
-    <meta property="og:url" content="images/fav.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="content">
-    <meta name="author" content="content">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/fav.png">
+    <meta name="description" content="description">
+    <meta name="author" content="Author">
+
+      <!-- Open Graph Meta Tags -->
+      <meta property="og:title" content="إصدار شهادة صحية">
+    <meta property="og:description" content="content">
+    <meta property="og:image" content="https://example.com/images/fav.png">
+    <meta property="og:url" content="https://example.com/your-page-url">
+    <meta property="og:type" content="website">
+      <!-- Favicons -->
+      <link rel="icon" type="image/png" sizes="16x16" href="images/fav.png">
     <link rel="icon" type="image/x-icon" href="fav.png">
+
+    <title>إصدار شهادة صحية</title>
+    
     <!-- Page Title -->
-    <title>بوابة بلـــدي</title>
+    <!-- <title>بوابة بلـــدي</title> -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/css/app.min.css" rel="stylesheet" type="text/css">
