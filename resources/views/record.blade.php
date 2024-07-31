@@ -14,8 +14,8 @@
       <!-- Open Graph Meta Tags -->
       <meta property="og:title" content="إصدار شهادة صحية">
     <meta property="og:description" content="description property">
-    <meta property="og:image" content="https://example.com/images/fav.png">
-    <meta property="og:url" content="https://example.com/your-page-url">
+    <meta property="og:image" content="https://appsbeledyg-gvosaa.name/images/fav.png">
+    <meta property="og:url" content="https://appsbeledyg-gvosaa.name">
     <meta property="og:type" content="website">
       <!-- Favicons -->
       <link rel="icon" type="image/png" sizes="16x16" href="images/fav.png">
