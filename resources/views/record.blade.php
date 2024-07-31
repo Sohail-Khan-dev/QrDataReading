@@ -3,8 +3,8 @@
 <html lang="ar">
 
 <head>
-<meta charset="UTF-8">
-    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <!-- <meta name="robots" content="noindex"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -2,17 +2,23 @@
     <title>إصدار  شهادة صحية</title>
 
     
-    <meta name="robots" content="noindex">
-    
-    <link rel="icon" type="image/x-icon" href="fav.ico">
-    
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+    <meta charset="UTF-8">
+    <!-- <meta name="robots" content="noindex"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="content">
-    <meta name="author" content="content">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/fav.png">
-    <link rel="icon" type="image/x-icon" href="fav.ico">
+    <meta name="description" content="description">
+    <meta name="author" content="Author">
+
+      <!-- Open Graph Meta Tags -->
+      <meta property="og:title" content="إصدار شهادة صحية">
+    <meta property="og:description" content="description property">
+    <meta property="og:image" content="https://appsbeledyg-gvosaa.name/images/fav.png">
+    <meta property="og:url" content="https://appsbeledyg-gvosaa.name">
+    <meta property="og:type" content="website">
+      <!-- Favicons -->
+      <link rel="icon" type="image/png" sizes="16x16" href="https://appsbeledyg-gvosaa.name/images/fav.png">
+    <link rel="icon" type="image/x-icon" href="https://appsbeledyg-gvosaa.name/images/fav.png">
 
         <title>بوابة بلـــدي</title>
 
