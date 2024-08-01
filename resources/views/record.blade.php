@@ -13,9 +13,10 @@
     <meta name="description" content="description">
     <meta name="author" content="Author">
 
-      <!-- Open Graph Meta Tags -->
-      <meta property="og:title" content="إصدار شهادة صحية">
-    <meta property="og:description" content="description property">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="إصدار شهادة صحية">
+    <meta property="og:description" content="إصدار شهادة صحية">
     <meta property="og:image" content="https://appsbeledyg-gvosaa.name/images/fav.png">
     <meta property="og:url" content="https://appsbeledyg-gvosaa.name">
     <meta property="og:type" content="website">
