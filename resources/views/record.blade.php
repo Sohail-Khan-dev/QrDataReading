@@ -5,7 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="robots" content="noindex"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="description">
@@ -50,15 +52,6 @@
             /* Set the text hover color */
         }
 
-        /* p a {
-            /* font-weight: 500; 
-            font-size: small;
-        } */
-
-        /* .form-control:disabled {
-            background-color: #f3f6f7;
-        } */
-
         footer {
             background-color: #f1f1f1;
             padding: 20px 0;
@@ -100,8 +93,13 @@
         .dropdown-menu {
             display: none;
         }
-
+        @media(max-width : 990px) {
+            #navbarNav{
+                margin: 16px -16px -16px -16px !important;
+            }
+        }
         @media(max-width : 750px) {
+          
             .footer-content {
                 display: block;
             }
@@ -124,29 +122,17 @@
 
         @media (max-width: 576px) {
 
-            /* .text-field {
-                margin-bottom: 0.5rem;
-            } */
             .footer-content {
                 flex-direction: column;
                 text-align: center;
             }
-
+           
             .footer-links,
             .footer-info {
                 /* display: flex; */
                 align-items: center;
                 justify-content: center;
             }
-
-            /* .text-field label {
-                font-size: 0.9rem !important;
-            } */
-
-            /* .text-field input {
-                font-size: 0.8rem;
-                padding: 0.2rem 0.4rem;
-            } */
 
             .img-fluid {
                 width: 150px;
@@ -157,32 +143,6 @@
             }
         }
 
-        /* .text-field.text-right {
-            position: relative;
-            margin-bottom: -8px;
-        } */
-
-        /* .text-field label {
-            bottom: -0.766rem;
-            right: 6px;
-            padding: 0px 3px;
-            line-height: 1.25;
-            z-index: 5;
-            font-size: large;
-        } */
-
-        /* .text-field label:before {
-            content: '';
-            background: white;
-            height: 16px;
-            width: auto;
-            display: block;
-            left: 0;
-            right: 0;
-            position: absolute;
-            top: 0;
-            z-index: -1;
-        } */
     </style>
 </head>
 
@@ -195,7 +155,7 @@
     </div>
    
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="https://balady.gov.sa/ar">
             <svg width="95" height="40" viewBox="0 0 95 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_228_2239)">
                     <path d="M45.1952 10.5008V14.2433C45.1952 15.4761 44.1826 16.4887 42.9498 16.4887H37.8424V4.99725H36.0373C35.641 4.99725 35.3328 5.30545 35.3328 5.70171V16.4887H29.8953V14.9477C29.8953 11.4254 27.0334 8.56357 23.5111 8.56357H21.3097V10.3467C21.3097 10.743 21.6179 11.0512 22.0142 11.0512H23.5111C25.6685 11.0512 27.4077 12.7903 27.4077 14.9477V16.4887H20.9134C20.5172 16.4887 20.209 16.7969 20.209 17.1932V18.9984H27.4077H28.5304H35.3328H36.5876H42.9498C45.5695 18.9984 47.6828 16.885 47.6828 14.2653V9.79637H45.8777C45.5034 9.79637 45.1952 10.1046 45.1952 10.5008Z" fill="white" />
@@ -226,7 +186,7 @@
                 </svg>
             </span>
         </button>
-        <div class="collapse navbar-collapse w-100" style="background: #1e6c64; margin:16px -16px -16px -16px !important;" id="navbarNav">
+        <div class="collapse navbar-collapse w-100" style="background: #1e6c64;" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="ml-4 nav-item">
                     <a class="dropdown-toggle nav-link" href="#">عن بلدي</a>
