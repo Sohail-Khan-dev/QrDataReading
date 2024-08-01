@@ -3,26 +3,24 @@
 <html lang="ar">
 
 <head>
-    <meta charset="UTF-8">
-    <!-- <meta name="robots" content="noindex"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="description">
     <meta name="author" content="Author">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="إصدار شهادة صحية">
     <meta property="og:description" content="إصدار شهادة صحية">
     <meta property="og:image" content="https://appsbeledyg-gvosaa.name/images/fav.png">
     <meta property="og:url" content="https://appsbeledyg-gvosaa.name">
     <meta property="og:type" content="website">
-      <!-- Favicons -->
-      <link rel="icon" type="image/png" sizes="16x16" href="https://appsbeledyg-gvosaa.name/images/fav.png">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://appsbeledyg-gvosaa.name/images/fav.png">
     <link rel="icon" type="image/x-icon" href="https://appsbeledyg-gvosaa.name/images/fav.ico">
+
 
     <title>إصدار شهادة صحية</title>
     
