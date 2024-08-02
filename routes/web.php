@@ -58,4 +58,8 @@ Route::get("/test/{correction?}/{encoding?}", function($correction="ISO-8859-1",
         $imgurl = $this->qrPath = Storage::url($path);
         return  $imgurl;
 });
+
+Route::get('testRead', function() {
+    Storage::disk('google')->put('test.txt', 'Hello World');
+});
 require __DIR__.'/auth.php';
